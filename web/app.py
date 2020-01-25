@@ -166,7 +166,7 @@ def update_output(
                 names=list_of_names,
                 dates=list_of_dates,
             )
-            html_url = 'http://ec2-18-223-99-62.us-east-2.compute.amazonaws.com:5000//report_id/{html_id}'.format(
+            html_url = 'reportity.com:5000/report_id/{html_id}'.format(
                 html_id=html_id,
             )
             return [
@@ -263,5 +263,5 @@ def student():
 
 
 if __name__=="__main__":
-    server.run(host='0.0.0.0',debug=False,port=5000)
+    server.run(host='0.0.0.0',debug=False, port=5000)
 
