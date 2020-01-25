@@ -166,7 +166,9 @@ def update_output(
                 names=list_of_names,
                 dates=list_of_dates,
             )
-
+            html_url = 'http://ec2-52-14-38-132.us-east-2.compute.amazonaws.com:5000/report_id/{html_id}'.format(
+                html_id=html_id,
+            )
             return [
                 {'display': 'none'},
                 {'display': 'block'},
