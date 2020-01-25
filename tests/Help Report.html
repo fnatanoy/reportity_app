@@ -1,0 +1,1083 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><link rel="stylesheet" href="Help Report_files/matlab-report-styles.css" type="text/css" /><script type="text/javascript" language="JavaScript" src="Help Report_files/matlabreports.js"></script><title>Help Report</title></head><body><div class="report-head">Help Report</div><p><div class="report-desc">The Help Report presents a summary view of the help component of your MATLAB files  (<a href="matlab:helpview([docroot '/techdoc/matlab_env/matlab_env.map'], 'matlab_env_help_rpt')">Learn More</a>).</div><table border="0"><tr><td><input type="button" value="Rerun This Report" id="rerunThisReport" onclick="runreport('helprpt(\'D:\\MBBP\\Code\\MBBP_Trunk\',\'dir\')');" /></td><td><input type="button" value="Run Report on Current Folder" id="runReportOnCurrent" onclick="runreport('helprpt');" /></td></tr></table><form method="post" action="matlab:internal.matlab.codetools.reports.handleForm"><input type="hidden" name="reporttype" value="helprpt" /><table cellspacing="8"><tr><td><input type="checkbox" name="helpSubfunsDisplayMode" checked onChange="this.form.submit()" />Show class methods</td><td><input type="checkbox" name="h1DisplayMode" checked onChange="this.form.submit()" />Description</td><td><input type="checkbox" name="exampleDisplayMode" checked onChange="this.form.submit()" />Examples</td></tr><tr><td><input type="checkbox" name="helpDisplayMode" checked onChange="this.form.submit()" />Show all help</td><td><input type="checkbox" name="seeAlsoDisplayMode"  onChange="this.form.submit()" />See also</td><td><input type="checkbox" name="copyrightDisplayMode"  onChange="this.form.submit()" />Copyright</td></tr></table></form>Report for folder D:\MBBP\Code\MBBP_Trunk<p><strong>MATLAB File List</strong><br/><table cellspacing="0" cellpadding="2" border="0"><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CKKT1dSolver.m'))"><span class="mono">KKT1dSolver</span></a></td><td class="td-linetopleft"><pre>  %Check that there are not irrelevant dof's</pre><pre>  %Check that there are not irrelevant dof's
+  if ~isempty(find(lb &gt;= ub)) || ~isempty(find(abs(c) &lt;= 0. &amp; abs(A(1,:)) &lt;= 0. &amp; abs(f) &lt;= 0.))
+      'There are irrelevant degrees of freedom'
+      throw(err);
+  end
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CKKTSolver.m'))"><span class="mono">KKTSolver</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CKKTface.m'))"><span class="mono">KKTface</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Caggregate_sm_groups.m'))"><span class="mono">aggregate_sm_groups</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+  Name: aggregate_sm_groups
+  User: yossis
+  Date: 2011-09-08
+  Description: aggregates cost, target and position and returns per bin in
+               matrix sm_groups, value in each column provided by
+               enums.sm_groups
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Calert_if.m'))"><span class="mono">alert_if</span></a></td><td class="td-linetopleft"><pre>  Write warning to log if condition is met</pre><pre>  Write warning to log if condition is met
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cattributes_update.m'))"><span class="mono">attributes_update</span></a></td><td class="td-linetopleft"><pre>  Update attribute fields in models struct to current kwd attributes</pre><pre>  Update attribute fields in models struct to current kwd attributes
+  such as: active status, current bid, conversion rate (separate input)
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cbbino_fit.m'))"><span class="mono">bbino_fit</span></a></td><td class="td-linetopleft"><pre>  Not in use</pre><pre>  Not in use
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cbbino_hist_calc.m'))"><span class="mono">bbino_hist_calc</span></a></td><td class="td-linetopleft"><pre>  Not in use</pre><pre>  Not in use
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cbbinopdf_integer.m'))"><span class="mono">bbinopdf_integer</span></a></td><td class="td-linetopleft"><pre>  Not in use</pre><pre>  Not in use
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cbilinear.m'))"><span class="mono">bilinear</span></a></td><td class="td-linetopleft"><pre>  bilinear(mat_coeffs, xh_row)</pre><pre>  bilinear(mat_coeffs, xh_row)
+  perform a bilinear form multiplication x*M*x' where x is row
+  each row in mat_coeff represents a different matrix
+  each row in xh_rows represents a different x
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cbins_n.m'))"><span class="mono">bins_n</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+ % Name: bins_n
+ % User: yossis
+ % Date: 2011-09-06
+ % Description: Creates n discrete bins representing ranges of values of metric_to_bin
+ %              such that the quantity of weighting_metric
+ %              in each bin will be as equal as possible but (optionally) not
+ %              smaller than minx.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cbins_sizex.m'))"><span class="mono">bins_sizex</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+ % Name: bins_sizex
+ % User: yossis
+ % Date: 2011-09-06
+ % Description: Creates discrete bins representing ranges of values
+ %              of metric_to_bin such that the quantity of weighting_metric
+ %              in each bin will be as close as possible to x but (optionally) not
+ %              smaller than minx. Will create no more than maxn bins.
+ %
+ % Inputs:
+ % metric_to_bin = column vector, value of metric to bin for each entity
+ % weighting_metric = column vector, weight of each entity
+ % x = desired bin size
+ % minx = minimum bin size
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_cost_point.m'))"><span class="mono">calc_cost_point</span></a></td><td class="td-linetopleft"><pre>  Create cost point for modeled group in semimodeled curve by optimizing at certain cost.</pre><pre>  Create cost point for modeled group in semimodeled curve by optimizing at certain cost.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_cost_step_from_bid_step.m'))"><span class="mono">calc_cost_step_from_bid_step</span></a></td><td class="td-linetopleft"><pre>  Translate (scalar) max bid change into max cost change for each group according to</pre><pre>  Translate (scalar) max bid change into max cost change for each group according to
+  its gamma value.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_cost_threshold.m'))"><span class="mono">calc_cost_threshold</span></a></td><td class="td-linetopleft"><pre>  Calculate CPA threshold.</pre><pre>  Calculate CPA threshold.
+  inputs: 
+  cost_threshold (max CPA from user)
+  sy_metrics = Historically weighted sum of metrics (cost, conv, log(rev_per_conv)) per kwd
+  active_vec = which kwds to consider when calculating threshold
+  policy_id = which optimization policy
+ 
+  outputs:
+  cost_threshold = average cost per conversion over all kwds
+  ct_msg = output message string
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_cpc.m'))"><span class="mono">calc_cpc</span></a></td><td class="td-linetopleft"><pre>  calc_cpc: calculate expected cpc per kw</pre><pre>  calc_cpc: calculate expected cpc per kw
+  the cpc is the cpc to bid ratio times current bid.
+  for kw's with click data, this ratio can be calculated directly using the
+  data in cost and the bidclick tracking
+  for kw's without click data, the ratio comes from the portfolio
+  the ratio cpc/bid is limited from below, i.e. it cannot be less than
+  min_cpc_bid_rel_prtfl * prtfl_cpc_bid_ratio
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_cpc_old.m'))"><span class="mono">calc_cpc_old</span></a></td><td class="td-linetopleft"><pre>  calc_cpc: calculate expected cpc per kw</pre><pre>  calc_cpc: calculate expected cpc per kw
+  the cpc is the cpc to bid ratio times current bid.
+  for kw's with click data, this ratio can be calculated directly using the
+  data in cost and the bidclick tracking
+  for kw's without click data, the ratio comes from the portfolio
+  the ratio cpc/bid is limited from below, i.e. it cannot be less than
+  min_cpc_bid_rel_prtfl * prtfl_cpc_bid_ratio
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_group_gammas.m'))"><span class="mono">calc_group_gammas</span></a></td><td class="td-linetopleft"><pre> % This is a placeholder for a more sophisticated model for gamma:</pre><pre>  This is a placeholder for a more sophisticated model for gamma:
+ %% gamma = (bid elacticity with regard to weighted impressions + 1)^-1
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_model_position_bounds.m'))"><span class="mono">calc_model_position_bounds</span></a></td><td class="td-linetopleft"><pre>  first find the zero-intercept of all models, noting upper bound on pos</pre><pre>  first find the zero-intercept of all models, noting upper bound on pos
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_osa_smoothed_var.m'))"><span class="mono">calc_osa_smoothed_var</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalc_pred_intvl.m'))"><span class="mono">calc_pred_intvl</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+  Name: calc_pred_intvl
+  User: yossis
+  Date: 2011-09-14
+  Description: calculates prediction interval for a prediction which is
+               expected to vary as a normal distribution with variance var
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+  z_score is the number to multply the standard error by in order to get
+  the confidence limit for a (1-conf) prediction interval (assuming a
+  normal distribution - this is a valid assumption for high enough
+  values of sem volume metrics)
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalculate_group_models.m'))"><span class="mono">calculate_group_models</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+  Name: calculate_group_models
+  User: yossis
+  Date: 2011-09-18
+  Description: main flow function for preparing group models for
+  semimodeled optimization. Calculate:
+  1. m - estimated marginal ROI,
+  2. m_prime - estimate of d(marginal ROI)/d(cost),
+  3. fractional allowed cost step sizes (up and down)
+  for each group
+ %%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalculate_modeled_semimodeled_curve.m'))"><span class="mono">calculate_modeled_semimodeled_curve</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+  Name: calculate_modeled_semimodeled_curve
+  User: yossis
+  Date: 2011-09-11
+  Description: calculates cost, target, m, m_prime, step_down, step_up for modeled bin in
+               matrix sm_groups, value in each column provided by
+               enums.sm_groups
+ 
+  1. Calculate current cost of modeled entites using current position and cost model
+ 
+  2. Calculate high cost point: optimize modeled group at max spend up.
+     Cost constraints: current cost * (1 + max_spend_up)
+ 
+  3. Calculate low cost point: optimal position for modeled entities at lowest cost obtainable
+     in a single optimization step.
+     Cost constraints: max[current cost * (1 -max_spend_down),lowest pos
+     for all entites]
+     If the lowest obtainable cost is higher than the high cost point,
+     return without building curve.
+ 
+  4. Calculate middle cost point: optimal position for all modeled entities
+     at current cost (if it is between the high and low points) or the
+     midpoint between high and low.
+ 
+  5. Calculate cost and 'revenue' at all three points using optimal causal factors
+     for each cost constraint. 'Revenue' is effective revenue metric, determined by the policy.
+ 
+  6. Calculate m and m_prime (current mROI and dmROI/dcost)
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalculate_pos_bins_cpc_to_bid.m'))"><span class="mono">calculate_pos_bins_cpc_to_bid</span></a></td><td class="td-linetopleft"><pre>  Creates bins of keywords according to position and calculates average</pre><pre>  Creates bins of keywords according to position and calculates average
+  position (weighted by clicks) and average cpc/bid ratio for each bin.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalculate_pos_regression_models.m'))"><span class="mono">calculate_pos_regression_models</span></a></td><td class="td-linetopleft"><pre>  Calculate regression models vs. position</pre><pre>  Calculate regression models vs. position
+ 
+  1. Calculate CTR vs. pos and costperimp vs. pos, both linear (decreasing)
+     models for all active kwds with sufficient data.
+     Recalculate models with only const. causal factor for all kwds with invalid models.
+     Save model success status for each kwd.
+ 
+  2. Calculate PPI vs. pos model, using raw model matrices (xty and yty)
+     from CTR and costperimp models (CTR multiplied by pred.rpclick).
+     Kwds with different performance characteristics (relative to portfolio)
+     are expected to have different ppi vs. pos models:
+     high roi - decreasing linear model (profit increases w. cost)
+     low roi &amp; high cost - increasing linear model (profit decreases w. cost)
+     others - quadratic model.
+     Recalculate models with only const. causal factor for all kwds with invalid models.
+     Save model success status for each kwd.
+ 
+  3. Calculate convperimp and revperimp models by scaling CTR models.
+     convperimp models = ctr models * kwd convrates
+     revperimp models = ctr models * kwd rpclick
+ 
+  4. Find allowed position interval for each model.
+ 
+  5. Exclude kwds with unusable models or bid mismatch between performance and current
+     bid (from ad_criterias).
+ 
+  6. For kwds without usable models ("non-convex"), check possibility
+     of using adgroup-level models. 
+     Set impressions for adgroups with similarity to sum of impressions
+     for all kwds in similarity group.
+ 
+  7. Calculate all absolute models (not relative to imps) - cost, 
+     profit, clicks, conv, revenue by multiplying other models by
+     impressions.
+ 
+  8. Save model types for kwds and adgroups with models (for kwds - kwd level
+     or adgroup level model, for adgroups - has similarity model or not).
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalculate_revenue_per_conv.m'))"><span class="mono">calculate_revenue_per_conv</span></a></td><td class="td-linetopleft"><pre> % revenue per CONVERSION for kwds</pre><pre>  revenue per CONVERSION for kwds
+ 
+  calculation for keywords with conversions:
+  average the log of the revenues and assign the exponent (historically smoothed)
+ 
+  calculation for keywords without conversions:
+  take the sum of logs of all keywords, divide by the total number of
+  conversions, and assign the exponent of that
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccalculate_semimodeled_curves.m'))"><span class="mono">calculate_semimodeled_curves</span></a></td><td class="td-linetopleft"><pre> % Calculate parameters for semimodeled groups</pre><pre>  Calculate parameters for semimodeled groups
+ %% 1. m - current marginal ROI
+ %% 2. m_prime - estimate of d(marginal ROI)/d(cost)
+ %% 3. cost step up and cost step down - Acceptible change in cost (as fraction)
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccascade_logical.m'))"><span class="mono">cascade_logical</span></a></td><td class="td-linetopleft"><pre>  Combine two logical vectors:</pre><pre>  Combine two logical vectors:
+  logical_c=cascade_logical(logical_a, logical_b)
+  logical_c = logical vector of length logical_a
+  length(logical_b) = number of 'true' elements in logical_a
+ 
+  logical_c is composed of two sub-vectors:
+  logical_c(indices of false elements in logical_a) = false
+  logical_c(indices of true elements in logical_a) = logical_b
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccell2str.m'))"><span class="mono">cell2str</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccell_insert.m'))"><span class="mono">cell_insert</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccf_mat_pos.m'))"><span class="mono">cf_mat_pos</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccheck_abort.m'))"><span class="mono">check_abort</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cchoose_latest.m'))"><span class="mono">choose_latest</span></a></td><td class="td-linetopleft"><pre>  Create vector of latest data by updating entries with later data while keeping earlier entries with no later data.</pre><pre>  Create vector of latest data by updating entries with later data while keeping earlier entries with no later data.
+  Add num_new entries so total length corresponds to all historical entries.
+  Optionally use comp_func to determine whether later data supercedes earlier data.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ccloseall.m'))"><span class="mono">closeall</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cd_bins_sizex.m'))"><span class="mono">d_bins_sizex</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+ % Name: d_bins_sizex
+ % User: yossis
+ % Date: 2011-09-06
+ % Description: Creates discrete bins in multiple dimension representing ranges of values
+ %              of metrics_to_bin such that the quantity of weighting_metric
+ %              in each bin in the final dimension will be as close as possible to x but (optionally) not
+ %              smaller than minx.
+ %
+ % Inputs:
+ % metrics_to_bin = rows: entities to bin, columns: values of metrics to bin for each entity
+ % weighting_metric = column vector, weight of each entity
+ % x = desired bin size
+ % minx = minimum bin size
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cd_group_by.m'))"><span class="mono">d_group_by</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+  Name: d_group_by
+  User: yossis
+  Date: 2011-09-07
+  Description: Finds the unqiue combination of indices and for each unique
+               combination sums the elements in matrix to_group
+               corresponding to that combination. Returns a matrix
+               containing where the first columns hold each unique
+               combination of indices and the remaining columns hold the
+               sums of metrics to_group corresponding to that combination.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cdata_update.m'))"><span class="mono">data_update</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  update historically weighted data
+  old_data, new_data = keyword metric matrix (one row per kwd)
+  histFact = history factor
+  curr_affcode_l = which keywords to update (logical vector)
+  smooth_type = one of two options:
+ 				type1 - for constant history factor. type2 - for dynamic history factor.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cdebug.m'))"><span class="mono">debug</span></a></td><td class="td-linetopleft"><pre>  debug/ logging function</pre><pre>  debug/ logging function
+  debug(message,m_type)
+  message: the string to be sent to the log file
+  m_type: whether the message was previously of type "debug" or type "log"
+  currently both types of messages are treated the same.
+  global debug_mode
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cdebug_cell.m'))"><span class="mono">debug_cell</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cdefold_matrix.m'))"><span class="mono">defold_matrix</span></a></td><td class="td-linetopleft"><pre>  Reconstruct symmetric n x n matrix from vector m, </pre><pre>  Reconstruct symmetric n x n matrix from vector m, 
+  which contains diagonal and above-diagonal elements of the matrix.
+  For example, a symmetric 3 x 3 matrix is represented by
+  the vector m = [11 12 13 22 23 33]
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CestimateHMax.m'))"><span class="mono">estimateHMax</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cexpsmooth_update.m'))"><span class="mono">expsmooth_update</span></a></td><td class="td-linetopleft"><pre>  Calculate updated smoothed data per kwd. (Add new_data to data with appropriate historical weighting).</pre><pre>  Calculate updated smoothed data per kwd. (Add new_data to data with appropriate historical weighting).
+  There are two possible types of smoothing:
+  type1: Returns weighted sum of data and total of historical weights.
+  Used when weight is constant over time (e.g. wls, sy_metrics)
+  type2: Returns weigted average of data.
+  Used when weight changes over time (OSA algorithm).
+ 
+  Additional inputs/outputs:
+  data - old cumulative weighted data
+  weight - total historical weights and sum of historical squared weights (used to find effective sample size)
+  new_data - to be added to data
+  h - weight of new data
+  num_new - number of new kwds, with no previous performance
+  curr_l - logical vector of old kwds (true for kwds to update)
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cexpsmooth_update_ext.m'))"><span class="mono">expsmooth_update_ext</span></a></td><td class="td-linetopleft"><pre>  Not in use</pre><pre>  Not in use
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cextfactor_read_input.m'))"><span class="mono">extfactor_read_input</span></a></td><td class="td-linetopleft"><pre>  Transfer data from extfactors_input into an array of structs extfactor_cellstruct.</pre><pre>  Transfer data from extfactors_input into an array of structs extfactor_cellstruct.
+  Each cell of extfactor_cellstruct is a struct containing a 'keys' field as
+  well as a field for each metric in enums.extfacotrs.field_names. in
+  addition, a field is added for every string in extra_metric_list cell
+  array
+ 
+  Inputs:
+  extfactors_input is a cell of blocks
+  each block is a cell of a matrix and structs, representing one day's
+  seasonal indexes. the code here assumes the same metrics will appear in
+  each block
+ 
+  this function does not make any assumption or validations on the metric
+  names, it receives them fromt the input
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cfifo_update.m'))"><span class="mono">fifo_update</span></a></td><td class="td-linetopleft"><pre>  Update input state matrix with new sample, keeping fixed number of previous samples in state matrix columns.</pre><pre>  Update input state matrix with new sample, keeping fixed number of previous samples in state matrix columns.
+  Order: oldest to newest -&gt; left to right, starting from column 2
+  In column 1, keep last non-zero record per row.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cforecast_metrics.m'))"><span class="mono">forecast_metrics</span></a></td><td class="td-linetopleft"><pre>  handled metrics :'ctr', 'costperimp', 'revenue', target</pre><pre>  handled metrics :'ctr', 'costperimp', 'revenue', target
+  calculate current model values on all words
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cforecast_report.m'))"><span class="mono">forecast_report</span></a></td><td class="td-linetopleft"><pre>  Create forecast of policy target for different budgets using semimodeled optimization.</pre><pre>  Create forecast of policy target for different budgets using semimodeled optimization.
+  Lowest budget is the cost if all groups were to be
+  given lowest possible cost (max spend down).
+  Highest budget is given by the unconstrained optimum
+  of the semimodeled optimization (up to max spend up).
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cgenerate_types.m'))"><span class="mono">generate_types</span></a></td><td class="td-linetopleft"><pre>  Assign model type to all entities. Calculate group bins for all semimodeled entities.</pre><pre>  Assign model type to all entities. Calculate group bins for all semimodeled entities.
+ 
+  1. Assign types to all entities:
+ 
+  meta-type codes
+ 
+  type                     type_code
+ 
+  adgroup ununsed            -3
+  adgroup modeled            -2
+  kw inactive                -1
+  kw modeled                  1
+  kw modeled by sim           2
+  kw semi-modeled             3
+  kw with marginal below threshold 6
+  kw at pos 1 with bid/cpc above threshold 7
+  kw at or above max bid constraint 8
+ 
+  legacy codes
+  kw modeled by sim (no data) 4
+  kw not enough imps since bc 5
+ 
+  2. Initialize opt_result struct - struct
+     ultimately containing optimization results
+     for each kwd.
+ 
+  3. Calculate desired bin size for semi-modeled groups.
+     Bin size = sum of cost-inducing metric (e.g. clicks)
+     divided by maximal number of desired bins (external
+     parameter), bounded by minimum bin size, determined
+     by constraints on the statistical error of an
+     individual group.
+ 
+  4. Perform binning of semi-modeled kwds.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cget_attributes_from_matrix.m'))"><span class="mono">get_attributes_from_matrix</span></a></td><td class="td-linetopleft"><pre>  Create attributes struct (attrs) with rows for all models_affcodes,</pre><pre>  Create attributes struct (attrs) with rows for all models_affcodes,
+  columns for attribute values in input data.
+  Return logical vector 'active' = 1 for affcodes with rows in input data
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cget_convrate_from_matrix.m'))"><span class="mono">get_convrate_from_matrix</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cget_extfactor.m'))"><span class="mono">get_extfactor</span></a></td><td class="td-linetopleft"><pre>  not in use</pre><pre>  not in use
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cget_metrics_from_matrix.m'))"><span class="mono">get_metrics_from_matrix</span></a></td><td class="td-linetopleft"><pre>  Transfer data from perfromance_matrix (current performance) into fields of metrics struct.</pre><pre>  Transfer data from perfromance_matrix (current performance) into fields of metrics struct.
+  Outputs:
+  curr_affcode_l - logical vector, length = number of all existing affcodes, including new ones from today.
+                   1 if affcode has performance in perfromance_matrix.
+  new_affcodes - vector of new affcodes
+  metrics - struct of current performance vectors for tracked metrics. One row per affcode with current data.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cget_param.m'))"><span class="mono">get_param</span></a></td><td class="td-linetopleft"><pre>  read field value from struct. If value does not exist - use default</pre><pre>  read field value from struct. If value does not exist - use default
+  params:
+  ret - the return value
+  ex - a string with the field name and value
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cget_summary_data.m'))"><span class="mono">get_summary_data</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+  Name: get_summary_data
+  User: yossis
+  Date: 2011-09-13
+  Description: gets summary data for the metrics requested in cell array metrics (e.g. {'cost','revenue','clicks'})
+               from models.sm_groups containing the results of an
+               optimization run, also returns expectation value for variance of prediction
+  metrics: cell array of strings. the metrics that should appear in the
+  summary reprot
+  optim_metrics: corresponding metrics from which to take the factor
+  (post-opt data) and they are also used to calculate variances
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cgroup_by.m'))"><span class="mono">group_by</span></a></td><td class="td-linetopleft"><pre>  GROUP_BY(DATA_VEC, GROUP_FUNC, IGNORE_VALUE)</pre><pre>  GROUP_BY(DATA_VEC, GROUP_FUNC, IGNORE_VALUE)
+  summarize data according to group affinity
+  INPUTS:
+  data_vec(:,1) is the keys (usually integers)
+  data_vec(:,2:end) is the data to be summarized (column-for-column)
+  group_func is a function handle to the summarizing function (usually
+  @sum)
+  ignore_value: a value that should be filtered
+  it is usefull when there are NaNs in the data
+  usage example:
+  vec=[1 2 3 1 1 2 2 3 1 2 3 1 3 2 2 2 3 1;16 18 3 18 13 2 6 11 19 19 3 19
+  19 10 16 3 8 18]
+  group_by(vec',@sum)==[1 103;2 74;3 44]
+ 
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cgrouping_main.m'))"><span class="mono">grouping_main</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Chandle_bid_constraints.m'))"><span class="mono">handle_bid_constraints</span></a></td><td class="td-linetopleft"><pre> %% Applying global constraints on bids</pre><pre> % Applying global constraints on bids
+ %%%
+ %%% 1. Very small absolute bid change - ignore change. 
+ %%%    Small absolute bid change - Round up bid change to currency quanta
+ %%%
+ %%% 2. Very small relative bid change - ignore change
+ %%%    Small relative bid change - round to at least threshold percent of cur_bid
+ %%%
+ %%% 3. recommended bids below min_bid - set to min_bid
+ %%%    bids above max_bid - set to max_bid
+ %%%    limit bid for position 1 if greater than models_state.max_kwd_bid_to_cpc*cur_cpc
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%% explantion to the parameters:
+ %%% kw_l: logical indexes on which the function will operate. it will not
+ %%% make any changes to other bids
+ %%% bidchange_l: logical indexes of keywords that had bid recommendations
+ %%% (this should be equivalent to ~(cur_bid==rec_bid)
+ %%% cur_bid: bid before optimization
+ %%% rec_bid: bid after optimization
+ %%% pc_ignore_th, pc_roundup_th: determine treatment of changes by small
+ %%% percentages
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Chandle_position_constraints.m'))"><span class="mono">handle_position_constraints</span></a></td><td class="td-linetopleft"><pre>  Set recommended bid for KW's below or above position constraints</pre><pre>  Set recommended bid for KW's below or above position constraints
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cin.m'))"><span class="mono">in</span></a></td><td class="td-linetopleft"><pre>  For each element in vec, does the value correspond to any of the values in 'values'?</pre><pre>  For each element in vec, does the value correspond to any of the values in 'values'?
+  b is a logical column vector with number of rows = number of elements in vec
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cinit_enums.m'))"><span class="mono">init_enums</span></a></td><td class="td-linetopleft"><pre>  Set enums for use in MBBP functions</pre><pre>  Set enums for use in MBBP functions
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cinit_models.m'))"><span class="mono">init_models</span></a></td><td class="td-linetopleft"><pre>  Initialize partial fields of 'models' struct, which contains all tracking and models data </pre><pre>  Initialize partial fields of 'models' struct, which contains all tracking and models data 
+  for all portfolio entites (kwds and adgroups).
+  All fields are left empty. Values are supplied in models_update.m
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cinitiate_summary.m'))"><span class="mono">initiate_summary</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cinititate_models.m'))"><span class="mono">inititate_models</span></a></td><td class="td-linetopleft"><pre>  Set fields of models_state struct using values in 'config' or defaults.</pre><pre>  Set fields of models_state struct using values in 'config' or defaults.
+  models_state contains all configurable parameters for portfolio, such
+  as policy, constraints, multipliers, step sizes, etc.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cinterp_step.m'))"><span class="mono">interp_step</span></a></td><td class="td-linetopleft"><pre>  interpolation of step function</pre><pre>  interpolation of step function
+  left of range - return 0
+  right of range - return last y
+  implementing binary search to make sure lookup time is logarithmic
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cintersect_segments.m'))"><span class="mono">intersect_segments</span></a></td><td class="td-linetopleft"><pre>  function segments=intersect_segments(seg1,seg2)</pre><pre>  function segments=intersect_segments(seg1,seg2)
+  find the set of intersections of the union of segments in seg1 and the
+  union of segments in seg2.
+  seg1, seg2 assumed to be each sorted and disjoint
+  method:
+  1. find the union of all the end points from both segments
+  2. attach a "+1" entry to the starting points and "-1" to the end points.
+  3. find the cumulative sum of the vector
+  4. each entry that has a "2" next to it is a beginning of segment
+  intersection, and the intersection endpoint ends at the next entry (which
+  MUST be a -1)
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ckeyed_concat.m'))"><span class="mono">keyed_concat</span></a></td><td class="td-linetopleft"><pre>  KEYED_CONCAT(A, B, DEFAULT)</pre><pre>  KEYED_CONCAT(A, B, DEFAULT)
+ : matching rows by common keys
+  a and b are vectors where the first column in each represents a key and
+  the rest represent data associated with that key.
+  for C=KEYED_CONCAT(A, B, DEFAULT), c is a matrix with the keys from A and
+  then keys from B that were not in A, and the rest of the columns the data
+  (columns 2 onward) from A then from B. empty data is filled with DEFAULTS
+  (or 0 if default not specified)
+  for [C1 C2]=KEYED_CONCAT(A, B, DEFAULT), c1 will contain the keys and
+  columns of data from A, and C2 will include the (row matched) data from
+  B. C2 will not contain the keys.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ckeyed_getrow.m'))"><span class="mono">keyed_getrow</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ckeyed_setrow.m'))"><span class="mono">keyed_setrow</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cm_bins_sizex.m'))"><span class="mono">m_bins_sizex</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%
+ % Name: m_bins_sizex
+ % Description: Creates discrete bins in two dimensions representing ranges of values
+ % of metric_to_bin and weighting_metric such that the quantity of weighting_metric
+ % in each bin in the final dimension will be as close as possible to x but (optionally) not
+ % smaller than minx.
+ %
+ % Inputs:
+ % metric_to_bin = rows: column vector, value of metric to bin for each entity
+ % weighting_metric = column vector, weight of each entity
+ % x = desired bin size
+ % minx = minimum bin size
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmake_met_mat.m'))"><span class="mono">make_met_mat</span></a></td><td class="td-linetopleft"><pre>  Apply functions in met_func_list to metrics, and save result of each function as column in mat.</pre><pre>  Apply functions in met_func_list to metrics, and save result of each function as column in mat.
+  Inputs:
+  metrics = struct of metric vectors
+  met_func_list = strings with MATLAB expressions 
+                  for fields/functions of fields in metrics
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmbbp_date.m'))"><span class="mono">mbbp_date</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmbbp_main.m'))"><span class="mono">mbbp_main</span></a></td><td class="td-linetopleft"><pre>  The main of MBBP</pre><pre>  The main of MBBP
+ %% input:
+ %%     input_cell: { {daily performance matrix} {attribute matrix} {date of performance matrix}}
+ %%         nonempty daily perfromance matrix - update run
+ %%         nonempty attribute matrix - optimization/forecast/quality assessor
+ %%     config: must have the following fields:
+ %%         modelname, base_dir, delayed_conversions
+ %%     extfactors: may be left undefined
+ %%
+ %% output format for each run type:
+ %%     update:
+ %%         output - code and message
+ %%         all others - meaningless
+ %%     optimization:
+ %%         ret - affcode, new bid
+ %%         output - code and message
+ %%         ret_reasons, warn_fname summed_metrics - self-explan
+ %%         summary_fname - file containing summary report
+ %%         summed_metrics - historical agg
+ %%         old_bids - not used in production(?)
+ %%     forecast:
+ %%         ret - the forecast graph data
+ %%         output - code and message
+ %%         all others - meaningless
+ %%     qtass:
+ %%         output - code and message
+ %%         summary_fname - file containing the qtass data
+ %%         all others - meaningless
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmbbp_ver.m'))"><span class="mono">mbbp_ver</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmodel_dynamic_range.m'))"><span class="mono">model_dynamic_range</span></a></td><td class="td-linetopleft"><pre>  model_dynamic range: extarct the slowest and highest possible cost,</pre><pre>  model_dynamic range: extarct the slowest and highest possible cost,
+  revenue and other metrics
+  this is also to serve as a sort of unit-test to
+  calculate_constraint_consts
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmodeled_optimization.m'))"><span class="mono">modeled_optimization</span></a></td><td class="td-linetopleft"><pre>  Find optimal x-values (opt_x) for all modeled entities in models.</pre><pre>  Find optimal x-values (opt_x) for all modeled entities in models.
+  1. screen trivial case - no modeled entities
+ 
+  2. construct optimization objects according to policy.target models (e.g. profit vs. pos)
+     target_poly - coefficients of models for modeled entities
+     target for optimization - target = xtHx+fx (H Hessian matrix, f linear coefficients vector)
+     constraints for optimization - constraints = Ax&lt;b , where A = linear model coefficients 
+     for constraint metrics (e.g. cost vs. pos), b = constraint bounds
+ 
+  3. Optimize
+ 
+  4. Summarize optimization results for logs.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmodeled_optimization_for_semimodeled.m'))"><span class="mono">modeled_optimization_for_semimodeled</span></a></td><td class="td-linetopleft"><pre>  modeled_optimization_for_semimodeled.m: a wrapper function which makes</pre><pre>  modeled_optimization_for_semimodeled.m: a wrapper function which makes
+  sure modeled_optimization_new is called with only a cost constraint and that
+  it is without overhead (constraints apply to sum of modeled entities, not sum of all entities)
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmodels_calculate.m'))"><span class="mono">models_calculate</span></a></td><td class="td-linetopleft"><pre>  Calculate models for keywords.</pre><pre>  Calculate models for keywords.
+ 
+  1. Apply multipliers to relevant metrics:
+     a. models.sy_metrics (weighted historical sums of metrics).
+     b. models.kw_tracking: imps, clicks, cost, conv, revenue, bid*clicks
+        result is stored in models.pred (kwd level time series prediction).
+ 
+  2. Calculate secondary fields in models.pred (not tracked in
+     models.kw_tracking): revenue per conversion, conversion rate
+     (if didn't get from similarity), cost per click, revenue per click, 
+     ROI, CPA_inv, CPC_inv.
+     Also, current pos.
+     Replace predicted cost and revenue with "reconstructed" values, using 
+     predicted clicks and calculated cpc (to take current bid into accoutn)
+     and rpclick (to take Bayesian conversion rate into account). (optional)
+ 
+  3. Calculate regression coefficients for all models (performance vs. position)
+     All models data saved in structs models.(metric name):
+     relative to imps - models for metrics: CTR, costperimp, PPI, convperimp, revperimp 
+     absolute metrics - cost, profit, clicks, conv, revenue.
+     Update model type (for kwds - kwd level or similarity - adgroup level),
+     and success status.
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmodels_update.m'))"><span class="mono">models_update</span></a></td><td class="td-linetopleft"><pre>  Update data in models struct, which contains time-dependent data for all portfolio kwds with performance.</pre><pre>  Update data in models struct, which contains time-dependent data for all portfolio kwds with performance.
+  Loop over dates in timerange.
+ 
+  1. Transfer performance data into metrics struct. Update new affcodes.
+ 
+  2. Extract seasonality data from extfactors_input. Construct two new structs:
+     extfacotrs_before_today_struct - cumulative seasonality data since
+                                      last day with performance.
+     extfacotrs_after_today_struct - seasonality data for updating predictions
+                                     based on current performance.
+ 
+  3. Update models.kw_tracking (kwd level time series prediction) of
+     metrics: imps, clicks, cost, conv, revenue and bid*clicks.
+     Use learning rate from OSA on portfolio level data (current metrics
+     averaged over kwds).
+     Use seasonal factors to adjust predictions before and after update.
+ 
+  4. Update other fields in models for days with impressions:
+     a. mincpc, min visited pos, bid
+ 
+     b. Update summary metrics (models.sy_metrics) = weighted sum of
+        historical performance per kwd.
+        clicks, cost, profit, imps, rev, conv, log(rpconv)*conv
+ 
+     c. Update raw matrices for regression models (models.(metric name)):
+        xtx, xty, yty
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CmosekWrapper.m'))"><span class="mono">mosekWrapper</span></a></td><td class="td-linetopleft"><pre>  Syntax  : [x,fval,exitflag,output,lambda]=quadprog(H,f,A,b,B,c,l,u,x0,options)</pre><pre>  Syntax  : [x,fval,exitflag,output,lambda]=quadprog(H,f,A,b,B,c,l,u,x0,options)
+  Purpose : Solves the problem
+ 
+              minimize     0.5*x'*H*x+f'*x
+              subject to         A*x          &lt;= b
+                                 B*x           = c
+                              l &lt;= x &lt;= u
+ 
+              The procedure is intended to be compatible with the function of
+              of the same name which is a part of the MATLAB optimization
+              toolbox.
+ 
+              To set options for this function use the optimset
+              function.
+ 
+  Examples: The command line
+ 
+              x = quadprog(H,f,A,b,[],[]);
+ 
+            solves a problem without any equalities and bounds.
+ 
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CmosekWrapper.m'),'connect')"><span class="mono">mosekWrapper.connect</span></a></td><td class="td-dashtopleft"><pre> REMOTE OPT</pre><pre> REMOTE OPT
+  make sure you ran javaaddpath(fullfile(pwd,'\RemoteOpt.jar'));
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CmosekWrapper.m'),'output_problem_def')"><span class="mono">mosekWrapper.output_problem_def</span></a></td><td class="td-dashtopleft"><pre>  write a code-like text file that defines the problem</pre><pre>  write a code-like text file that defines the problem
+  assumes fid is a validated open file
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CmosekWrapper.m'),'send_to_optimizer')"><span class="mono">mosekWrapper.send_to_optimizer</span></a></td><td class="td-dashtopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CmosekWrapper.m'),'verify_result')"><span class="mono">mosekWrapper.verify_result</span></a></td><td class="td-dashtopleft"><pre> % jacob: implement KKT verification here</pre><pre>  jacob: implement KKT verification here
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmosekopt.m'))"><span class="mono">mosekopt</span></a></td><td class="td-linetopleft"><pre>  Syntax     : [r,res] = mosekopt(cmd,prob,param,callback)</pre><pre>  Syntax     : [r,res] = mosekopt(cmd,prob,param,callback)
+ 
+  Purpose    : Interface to the MOSEK optimization tools.
+           
+  Description: 
+ 
+  Required arguments:
+    cmd       A command string. E.g 'minimize'.
+    prob      The optimization problem.   
+ 
+  Optional arguments.
+    param     MOSEK parameters.
+    callback  A callback function.
+ 
+  Please see "The MOSEK optimization toolbox manual" for a detailed
+  description of MOSEKOPT.
+ 
+  After a call to MOSEKOPT the argument r holds the return code and
+  res holds the result of the optimization. In case of an error the
+  files res.rmsg contains an error message and r.rcodestr holds the
+  symbolic name of the error code. 
+ 
+  The first option cmd is a string which consists of one or more of
+  the following commands:
+ 
+  * echo()
+  Controls how much information is echoed to the screen. The syntax of
+  the command is
+ 
+  echo(level)
+ 
+  where level is a non-negative integer. If level is identical to 0
+  nothing is echoed. If level is equal to 3, then all messages and
+  errors are echoed to the screen.
+ 
+  * read()
+  Data is read from a file. The command
+ 
+  read(name)
+ 
+  results in reading the file 'name'.  The file format is
+  determined by the extension. (e.g .mps, .lp, .opf or .mbt). 
+ 
+  * statuskeys()
+  The command statuskeys(0) means that all the status keys such as
+  the problem status in the solution is reported using string
+  codes. Whereas the command statuskeys(1) means that all the
+  status keys are reported using numeric codes.
+ 
+  * minimize
+  Run the optimizer, minimize the objective. 
+ 
+  * maximize
+  Run the optimizer, maximize the objective.
+ 
+  * write()
+  The problem data is written to a file. The file format is
+  determined by the file extension (e.g .mps, .lp, .opf or .mbt). The command 
+                
+  write(name)
+  
+  writes the problem given in prob to the file 'name'.
+ 
+  * param
+  When this command is present, the parameter database is returned in res.param.
+ 
+  * info
+  When this command is present,  the task information database is
+  returned in res.info. This database contains various task specific information.
+ 
+  * symbcon
+  When this command is present, then then the data structure
+  symbcon is returned in res.symbcon.
+ 
+  Examples:
+ 
+  - Run the optimizer and minimize objective function of problem
+  given in prob:
+  [r,res] = mosekopt('minimize',prob)
+ 
+  - Read (but do not optimize) the problem file afiro.mps:
+ 
+  [r,res] = mosekopt('read(afiro.mps)')
+ 
+  After the call the  problem is stored in res.prob.
+  
+  See also: MSKLPOPT, MSKQPOPT, MSKSCOPT, MSKGPOPT
+ 
+  Note:     The file mosekopt.m is only a help file and does
+            not contain any code. 
+ 
+<br/></pre><pre><a href="matlab: opentoline(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmosekopt.m'),75)">75:</a>  
+Examples:
+</pre></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmskcheck.m'))"><span class="mono">mskcheck</span></a></td><td class="td-linetopleft"><pre>  Purpose: Check problem data.</pre><pre>  Purpose: Check problem data.
+ 
+ % Copyright (c) 1998-2009 MOSEK ApS, Denmark. All rights reserved.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmskeflag.m'))"><span class="mono">mskeflag</span></a></td><td class="td-linetopleft"><pre>  Used by the MOSEK compability toolbox.</pre><pre>  Used by the MOSEK compability toolbox.
+ 
+ % Copyright (c) 1998-2009 MOSEK ApS, Denmark. All rights reserved.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmsklinprog.m'))"><span class="mono">msklinprog</span></a></td><td class="td-linetopleft"><pre>  Syntax  : [x,fval,exitflag,output,lambda]=linprog(f,A,b,B,c,l,u,x0,options)</pre><pre>  Syntax  : [x,fval,exitflag,output,lambda]=linprog(f,A,b,B,c,l,u,x0,options)
+ 
+ 
+  Purpose : Solves the problem                   
+    
+              min      f'*x    
+              st.      A*x    &lt;= b 
+                       B*x     = c
+                    l &lt;= x &lt;= u 
+ 
+            The procedure is intended to be compatible with the function of
+            of the same name which is a part of the MATLAB optimization 
+            toolbox.
+ 
+  Examples: The command line
+             
+              x = linprog(f,A,b,[],[],l); 
+ 
+            solves the problem 
+            
+             min      f'*x    
+             st.      A*x    &lt;= b 
+                      l &lt;= x 
+ 
+            Options for this function may be set with the optimset
+            function. E.g 
+ 
+            options = optimset('');
+            options = optimset(options,'Diagnostics','on');
+            [x] = linprog(f,A,b,B,c,l,u,x0,options)
+  
+            Will make MOSEK print diagnostics messages to the
+            screen. 
+ 
+  See also: OPTIMSET, MSKLPOPT, MOSEKOPT
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmskoptimset.m'))"><span class="mono">mskoptimset</span></a></td><td class="td-linetopleft"><pre>  Syntax:</pre><pre>  Syntax:
+ 
+  options = optimset('param1',value1,'param2',value2,...)
+  optimset
+  options = optimset
+ 
+ 
+  Purpose: Is used to create and modify optimization
+           options structure.  
+ 
+  Examples:
+            options = optimset('');
+            options = optimset(options,'Diagnostics','on');
+  
+            Turns on diagnostics messages to the screen.
+             
+  See also: OPTIMGET, LINPROG, QUADPROG
+ % Copyright (c) 1998-2009 MOSEK ApS, Denmark. All rights reserved.
+<br/></pre><pre><a href="matlab: opentoline(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmskoptimset.m'),11)">11:</a>  
+Examples:
+options = optimset('');
+options = optimset(options,'Diagnostics','on');
+</pre></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmskoptnam.m'))"><span class="mono">mskoptnam</span></a></td><td class="td-linetopleft"><pre>  Purpose: Check if name is in the optimization options structure.</pre><pre>  Purpose: Check if name is in the optimization options structure.
+ 
+  Output : code - A return code which has the interpretation. 
+                  0, name does not exists
+                  1, name exists
+                  2, name is ambiguos
+ 
+ % Copyright (c) 1998-2009 MOSEK ApS, Denmark. All rights reserved.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmskoutput.m'))"><span class="mono">mskoutput</span></a></td><td class="td-linetopleft"><pre>  Used by the MOSEK compability toolkit.</pre><pre>  Used by the MOSEK compability toolkit.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmskquadprog.m'))"><span class="mono">mskquadprog</span></a></td><td class="td-linetopleft"><pre>  Syntax  : [x,fval,exitflag,output,lambda]=quadprog(H,f,A,b,B,c,l,u,x0,options)</pre><pre>  Syntax  : [x,fval,exitflag,output,lambda]=quadprog(H,f,A,b,B,c,l,u,x0,options)
+  Purpose : Solves the problem                   
+    
+              minimize     0.5*x'*H*x+f'*x    
+              subject to         A*x          &lt;= b 
+                                 B*x           = c
+                              l &lt;= x &lt;= u 
+ 
+              The procedure is intended to be compatible with the function of
+              of the same name which is a part of the MATLAB optimization 
+              toolbox.
+ 
+              To set options for this function use the optimset
+              function.
+ 
+  Examples: The command line
+          
+              x = quadprog(H,f,A,b,[],[]);
+ 
+            solves a problem without any equalities and bounds. 
+ 
+  Se also:  OPTIMSET, MSKQPOPT, MOSEKOPT
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmsksetup.m'))"><span class="mono">msksetup</span></a></td><td class="td-linetopleft"><pre>  Purpose: Function used by the MOSEK compability toolbox.</pre><pre>  Purpose: Function used by the MOSEK compability toolbox.
+ 
+ % Copyright (c) 1998-2009 MOSEK ApS, Denmark. All rights reserved. 
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cmskstatus.m'))"><span class="mono">mskstatus</span></a></td><td class="td-linetopleft"><pre>  Internal function used by linprog, quadprog, etc.</pre><pre>  Internal function used by linprog, quadprog, etc.
+ 
+ % Copyright (c) 1998-2009 MOSEK ApS, Denmark. All rights reserved.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CnoGlobalConst.m'))"><span class="mono">noGlobalConst</span></a></td><td class="td-linetopleft"><pre>  function xout = noGlobalConst(H,f,A,b,Aeq,beq,lb,ub)</pre><pre>  function xout = noGlobalConst(H,f,A,b,Aeq,beq,lb,ub)
+  Solves colection of 1-d problems (on each of the coordinates)
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cnum3str.m'))"><span class="mono">num3str</span></a></td><td class="td-linetopleft"><pre>  str=num3str(mat) returns a string containing mat rounded to first 3 non-zero digits</pre><pre>  str=num3str(mat) returns a string containing mat rounded to first 3 non-zero digits
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cold_modeled_semimodeled_calc.m'))"><span class="mono">old_modeled_semimodeled_calc</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Coptim_main.m'))"><span class="mono">optim_main</span></a></td><td class="td-linetopleft"><pre>  Description: main optimization function</pre><pre>  Description: main optimization function
+  Name: optim_main
+  Date: 2011-09-18
+ 
+  1. Perform semimodeled optimization:
+     Find optimal m-value achievable under
+     policy constraints and allowed cost step sizes for
+     all groups (one modeled group, several semi-modeled groups).
+ 
+     Optimization consists of finding maximum of 'revenue' metric
+     given constraint mROI&gt;1 -&gt; actually 'profit' optimization.
+ 
+     Note: 'revenue' metric is policy.target_for_sm ('revenue' for
+     profit and revenue policies, 'clicks' for traffic policy
+     and 'conv' for conversions policy).
+     Profit and revenue policies differ in the revenue multuplier,
+     which affects the m-value and min_mroi constraint as well.
+ 
+  2. Translate cost changes into bid changes:
+     a. Calculate bids for semimodeled groups
+     b. Optimize bids for modeled entities using
+        cost constraint = modeled group cost from step 1.
+ 
+     Optimization consists of finding closest possible point
+     to maximum of 'target' model.
+ 
+     Note: 'target' metric is policy.target ('profit' for
+     profit and revenue policies, 'clicks' for traffic policy
+     and 'conv' for conversions policy).
+ 
+  Inputs:
+  opt_result - struct eventually containing optimization
+  results for all kwds. As input contains optimization meta-type
+  for kwds and group bins.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cosa.m'))"><span class="mono">osa</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cosa.m'),'osa_relative_var')"><span class="mono">osa.osa_relative_var</span></a></td><td class="td-dashtopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cosa.m'),'osa_update_new')"><span class="mono">osa.osa_update_new</span></a></td><td class="td-dashtopleft"><pre>  % % [osa_st predict]= osa_update(osa_st, new_x, curr_l)</pre><pre>  % % [osa_st predict]= osa_update(osa_st, new_x, curr_l)
+ 
+  Optimal Stepsize Algorithm (OSA) for calcualting adaptive step-sizes
+  for Exponential Smoothing Forecasting.
+ 
+  For explanation of algorithm see "Adaptive stepsizes for recursive estimation with
+  applications in approximate dynamic programming", George &amp; Powell 2006
+ 
+  Input:    x           - Current observed vector of values
+            state.params_vec  - Vectors with parameters for model
+                params_vec(:,1) - Previous Forecast
+                params_vec(:,2) - Previous Miu
+                params_vec(:,3) - Previous Lambda_bar
+                params_vec(:,4) - Previous Beta_bar
+                params_vec(:,5) - Previous Delta_bar
+            curr_l     - Vector with positions of current values in vector
+                            of all values (other values will be assumed 0)
+ 
+  Output:   predict     - Forecasts for the next values
+ 
+  Revision: 3.0 Shahar Siegman 24/10/2011 (class method)
+  Revision: 2.0 Shahar Siegman 29/08/2011
+  Revision: 1.0 Shai Tirosh 23/09/2009
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cosa_generic.m'))"><span class="mono">osa_generic</span></a></td><td class="td-linetopleft"><pre>  step 0</pre><pre>  step 0
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cosa_test.m'))"><span class="mono">osa_test</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cparse_advanced_params.m'))"><span class="mono">parse_advanced_params</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'))"><span class="mono">piecewise</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'combine_interp')"><span class="mono">piecewise.combine_interp</span></a></td><td class="td-dashtopleft"><pre>  function out=combine_interp(f1, f2, ..., fn)</pre><pre>  function out=combine_interp(f1, f2, ..., fn)
+  takes as input a one or more piecewise linear functions (represented by
+  the x's and y's at the nodes)
+  outputs a combined linear interpolation function
+  for each f, assumes function is flat (equals a constant) beyond its
+  leftmost and rightmost defined points
+  note: for disjoint-node functions, the number of nodes in the output
+  function is the sum of the nodes of the individual functions
+  how to unit-test:
+  % function pass=combine_interp_temp
+  % pass=ut_combine_step_q
+  % end
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'combine_interp_q')"><span class="mono">piecewise.combine_interp_q</span></a></td><td class="td-dashtopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'combine_interp_simple')"><span class="mono">piecewise.combine_interp_simple</span></a></td><td class="td-dashtopleft"><pre>  function fout=combine_interp_simple(f1, f2)</pre><pre>  function fout=combine_interp_simple(f1, f2)
+  takes as input two linear interpolation functions
+  outputs a combined linear interpolation function
+  assumes functions are flat (equal a constant) outside range
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'combine_step_q')"><span class="mono">piecewise.combine_step_q</span></a></td><td class="td-dashtopleft"><pre>  note: in this implementation f.y(end) is interpreted to be the value of</pre><pre>  note: in this implementation f.y(end) is interpreted to be the value of
+  the function from f.x(end) to +Inf
+  if you want that value to be 0, make sure that for the input f1, f2:
+  f.y(end)==0
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'pw2fun')"><span class="mono">piecewise.pw2fun</span></a></td><td class="td-dashtopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'pw_max')"><span class="mono">piecewise.pw_max</span></a></td><td class="td-dashtopleft"><pre>  function f_max=pw_max(f, c)</pre><pre>  function f_max=pw_max(f, c)
+  input: a piecewise function f and a constant c
+  output: a piecewise function f_max equal at every point xx to the maximum of
+  f(xx) and c
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'pw_yrange')"><span class="mono">piecewise.pw_yrange</span></a></td><td class="td-dashtopleft"><pre>  function segments=yrange2x(f, y_range)</pre><pre>  function segments=yrange2x(f, y_range)
+  provide a set of segments (defined by their x-axis endpoints) where the
+  value of the ys are within the range specified in y_range
+  f is a pw function
+ y_range=[min(y_range) max(y_range)];
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'pwl_eval')"><span class="mono">piecewise.pwl_eval</span></a></td><td class="td-dashtopleft"><pre>  if exist('deriv_num','var') &amp;&amp; deriv_num&gt;0</pre><pre>  if exist('deriv_num','var') &amp;&amp; deriv_num&gt;0
+      fname=['dy' num2str(round(deriv_num))];
+      if isfield(f,fname)
+          f.y=f.(fname);
+      end
+  end
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-dashtop"><a href="matlab: editorservices.openAndGoToFunction(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpiecewise.m'),'pwq_eval')"><span class="mono">piecewise.pwq_eval</span></a></td><td class="td-dashtopleft"><pre>  function y=eval_pw_quad(f, df, x)</pre><pre>  function y=eval_pw_quad(f, df, x)
+  evaluate a piecewise quadratic function
+  use the f to find the segment to which xx belongs
+  then use quad_int to evaluate the exact value at f
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpolicy_factory.m'))"><span class="mono">policy_factory</span></a></td><td class="td-linetopleft"><pre>  Set fields of 'policy' struct with appropriate metric names for policy</pre><pre>  Set fields of 'policy' struct with appropriate metric names for policy
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpos_cpc_to_bid_eval.m'))"><span class="mono">pos_cpc_to_bid_eval</span></a></td><td class="td-linetopleft"><pre>  Calculate cpc/bid ratio for keywords in kw_pos_vec according to their</pre><pre>  Calculate cpc/bid ratio for keywords in kw_pos_vec according to their
+  position, using interpolation between the position bins.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpos_to_bids.m'))"><span class="mono">pos_to_bids</span></a></td><td class="td-linetopleft"><pre>  Translate recommended position change into bid change for all entites in 'convex'.</pre><pre>  Translate recommended position change into bid change for all entites in 'convex'.
+ 
+  1. ignore small position changes
+     update pos_change = logical vector of all entities with pos
+     change (excluding the ignored entities).
+ 
+  2. compute new bid
+ 
+  3. set bid for kwds to pause to -1
+ 
+  4. update bids in opt_result.recommended_bids
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cpred_interval.m'))"><span class="mono">pred_interval</span></a></td><td class="td-linetopleft"><pre>  pred_interval - compute the prediction intreval of a least squares model</pre><pre>  pred_interval - compute the prediction intreval of a least squares model
+  see formula in KNN book on p. 230 (6.63a): S^2{pred}=MSE(1+ X'h (XTX)^-1 Xh)
+  here we assume xh is a row vector, whereas book assumes it's a column
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cprepare_xtx_data.m'))"><span class="mono">prepare_xtx_data</span></a></td><td class="td-linetopleft"><pre>  xtx_data = matrix containing one row per row of x (correspond to kwds) </pre><pre>  xtx_data = matrix containing one row per row of x (correspond to kwds) 
+  each row k contains the diagonal and above-diagonal elements of the symmetric matrix xtx:
+ 
+  [ x(k,1)*x(k,1) x(k,1)*x(k,2) ... x(k,1)*x(k,m) ;
+    x(k,2)*x(k,1) x(k,2)*x(k,2) ... x(k,2)*x(k,m) ;
+          ...                                     ;
+          ...                                     ;
+          ...                                     ;
+    x(k,m)*x(k,1) x(k,m)*x(k,2) ... x(k,m)*x(k,m) ]
+ 
+  This matrix, when added to cumulative historical value, equals the current
+  value of the matrix cf'*cf where cf is the vector of causal factors for the
+  regression model of kwd k.
+ 
+  In order to conserve space, the matrices for all kwds k are compressed, 
+  with each row containing the diagonal and above-diagonal elements for one k
+  in the order: [ x(k,1)*x(k,1) ... x(k,1)*x(k,m) x(k,2)*x(k,2) ... x(k,2)*x(k,m) x(k,3)*x(k,3) ... x(k,m)*x(k,3) ... ]
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cprepare_y_data.m'))"><span class="mono">prepare_y_data</span></a></td><td class="td-linetopleft"><pre> %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</pre><pre> %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  Calculate current contribution to xty and yty matrices.
+  x = matrix of causal factors (m columns for causal factors, one row per kwd - n rows)
+  y = vector of dependent variables (n rows)
+ 
+  For row (kwd) k:
+  yty_data(k,:) = [ x(k,1)*y(k) ... x(k,m)*y(k) y(k)*y(k)]
+  All columns except the last belong to the xty matrix. The last column belongs to the yty matrix.
+ 
+  Add these elements to their cumulative historical values to obtain the
+  xty and yty matrices for regression.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cprepare_yty_data.m'))"><span class="mono">prepare_yty_data</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cquad_int.m'))"><span class="mono">quad_int</span></a></td><td class="td-linetopleft"><pre>  find the value of point on a quadratic curve given the two curve</pre><pre>  find the value of point on a quadratic curve given the two curve
+  endpoints (given as 2x1 vectors x and y) and the quadratic coefficient q
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5CquadprogK.m'))"><span class="mono">quadprogK</span></a></td><td class="td-linetopleft"><pre> Input: same as Matlab's quadprog, except for</pre><pre> Input: same as Matlab's quadprog, except for
+  options must include the address of Mosek server, ip_str
+ Output
+ Solution, x; flag indicating status of problem and solution
+ Flags
+  -2, infeasible problem
+   1, feasible problem, optimal solution found
+   0, feasible problem, but not optimal solution found
+  -7, feasible problem, but no feasible solution found
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cquality_assessor.m'))"><span class="mono">quality_assessor</span></a></td><td class="td-linetopleft"><pre>  new quality assessor</pre><pre>  new quality assessor
+  produces averages and predictions 
+  sectioned by metric and kw
+  in a cell array
+  with variances
+  summary_file_format: "group, metric","prediction type",value,confidence
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Credistrib_type1.m'))"><span class="mono">redistrib_type1</span></a></td><td class="td-linetopleft"><pre>  indexing base: opt_result.type1</pre><pre>  indexing base: opt_result.type1
+  note: no reduction of similarity entities
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Crestrict_model_num.m'))"><span class="mono">restrict_model_num</span></a></td><td class="td-linetopleft"><pre>  Restrict number of modeled entities</pre><pre>  Restrict number of modeled entities
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Crevenue_predict.m'))"><span class="mono">revenue_predict</span></a></td><td class="td-linetopleft"><pre>  rel: list of indexes to work on</pre><pre>  rel: list of indexes to work on
+ TODO: rel currently can only be 1:len; correct
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Croi_optimization.m'))"><span class="mono">roi_optimization</span></a></td><td class="td-linetopleft"><pre>  FUNCTION [ROI, OUT]=ROI_OPTIMIZATION(MODELS, CONSTRAINTS)</pre><pre>  FUNCTION [ROI, OUT]=ROI_OPTIMIZATION(MODELS, CONSTRAINTS)
+  find maximum ROI for given model
+  implement algorith W6 in test_max_roi.m
+  used fields in struct constraints:
+  constraints.min_pos_def: lowest possible position of a keyword
+  constraints.max_pos_def: highest possible position of a keyword
+  used fields in struct models (keyword vectors):
+  models.ppi_coeffs: profit per impression vs. position linear model
+  models.ave_imps: average impressions vs. position linear model
+  models.costperimp_coeffs: cost per impression vs. position linear model
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csafediv.m'))"><span class="mono">safediv</span></a></td><td class="td-linetopleft"><pre>  d = safediv(a, b)</pre><pre>  d = safediv(a, b)
+  return b/a for b and a vectors of positive numbers.
+  return 0 where denomenator a is 0.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csave_affcode_data.m'))"><span class="mono">save_affcode_data</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cscalerow.m'))"><span class="mono">scalerow</span></a></td><td class="td-linetopleft"><pre>  Multiply each row in coeffs by the corresponding element in scale vector</pre><pre>  Multiply each row in coeffs by the corresponding element in scale vector
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csemimodeled_build_curves.m'))"><span class="mono">semimodeled_build_curves</span></a></td><td class="td-linetopleft"><pre>  Create piecewise functions representing total cost (sum of groups) vs. m and total revenue vs. m</pre><pre>  Create piecewise functions representing total cost (sum of groups) vs. m and total revenue vs. m
+ 
+  Inputs:
+  params:[grp_m,grp_m_prime,grp_step_down,grp_step_up]
+  metric_mat: [cost revenue] rows
+  Outputs:
+  indiv_cost_f: cell array, each cell: piecewise struct 
+                representing linear function cost vs. m 
+                for individual group
+  indiv_rev_f: cell array, each cell: piecewise struct 
+                representing quadratic function rev vs. m 
+                for individual group
+  cost_chrctr, rev_chrctr: piecewise structs representing sum 
+                           of all groups at all m values belonging
+                           to any of the individual group functions
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csemimodeled_calc_group_change.m'))"><span class="mono">semimodeled_calc_group_change</span></a></td><td class="td-linetopleft"><pre>  report the relative change in cost and revenue of each group given m</pre><pre>  report the relative change in cost and revenue of each group given m
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csemimodeled_cost_to_bids.m'))"><span class="mono">semimodeled_cost_to_bids</span></a></td><td class="td-linetopleft"><pre>  Translate budget change for semimodeled groups due to optimization into bid changes</pre><pre>  Translate budget change for semimodeled groups due to optimization into bid changes
+ 
+  1. Calculate new bids, update in opt_result.recommended_bids
+ 
+  2. handle position constraints (change bids for kwds outside of
+     [min pos,max pos] range).
+ 
+  3. handle bid constraints (apply constraints on absolute bid change, 
+     relative bid change and absolute bid).
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csemimodeled_optimization.m'))"><span class="mono">semimodeled_optimization</span></a></td><td class="td-linetopleft"><pre>  Perform semimodeled optimization for portfolio by calculating optimal budget changes for all groups, given constraints.</pre><pre>  Perform semimodeled optimization for portfolio by calculating optimal budget changes for all groups, given constraints.
+ 
+  inputs: 
+  sm_groups - matrix with group data
+  constraints - struct with constraints: cost.min, cost.max, roi.min,
+  mroi.min
+ 
+  outputs:
+  cost_fact, rev_fact - vectors of relative changes in group cost and revenue
+                        at optimal m.
+  m_opt_min_max - [optimal m, minimum m in portfolio range, maximum m in portfolio range]
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csemimodeled_optimize.m'))"><span class="mono">semimodeled_optimize</span></a></td><td class="td-linetopleft"><pre>  Find optimal m value for given portfolio cost and revenue functions.</pre><pre>  Find optimal m value for given portfolio cost and revenue functions.
+  1. Find allowed m values according to the constraints.
+  2. If the constraints are unfeasible, find m that minimizes the
+     loss function (roughly, a measure of the 'distance' from constraints, 
+     in terms of cost).
+  3. If the constraints are feasible, choose smallest allowed m value (to
+     maximize revenue).
+  4. If the m chosen in the previous steps is smaller than the mroi.min
+     constraint, set optimal m to mroi.min
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csemimodeled_preprocess.m'))"><span class="mono">semimodeled_preprocess</span></a></td><td class="td-linetopleft"><pre>  Transfer group values from sm_groups matrix</pre><pre>  Transfer group values from sm_groups matrix
+  1. metric_mat - [cost,rev] for each group
+  2. params - m, dm/d(cost), cost step up and down for each group
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csemimodeled_unittest.m'))"><span class="mono">semimodeled_unittest</span></a></td><td class="td-linetopleft"><pre>  currently this function is written as a unit-test </pre><pre>  currently this function is written as a unit-test 
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csignidig.m'))"><span class="mono">signidig</span></a></td><td class="td-linetopleft"><pre>  m = signdig(m,d) returns m rounded so that exactly d digits are kept.</pre><pre>  m = signdig(m,d) returns m rounded so that exactly d digits are kept.
+  If abs(m)&lt;1e-8, only d digits from 8th decimal place are kept.
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cstatefile_valid.m'))"><span class="mono">statefile_valid</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cstr_join.m'))"><span class="mono">str_join</span></a></td><td class="td-linetopleft"><pre> S=JOIN(D,L) joins a cell array of strings L by inserting string D in</pre><pre> S=JOIN(D,L) joins a cell array of strings L by inserting string D in
+             between each element of L.  Meant to work roughly like the
+             PERL join function (but without any fancy regular expression
+             support).  L may be any recursive combination of a list 
+             of strings and a cell array of lists.
+ 
+ For any of the following examples,
+     &gt;&gt; join('_', {'this', 'is', 'a', 'string'} )
+     &gt;&gt; join('_', 'this', 'is', 'a', 'string' )
+     &gt;&gt; join('_', {'this', 'is'}, 'a', 'string' )
+     &gt;&gt; join('_', {{'this', 'is'}, 'a'}, 'string' )
+     &gt;&gt; join('_', 'this', {'is', 'a', 'string'} )
+ the result is:
+     ans = 
+         'this_is_a_string'
+ 
+ Written by Gerald Dalley (dalleyg@mit.edu), 2004
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cstruct_array_combine.m'))"><span class="mono">struct_array_combine</span></a></td><td class="td-linetopleft"><pre>  Combines entries from input struct array.</pre><pre>  Combines entries from input struct array.
+  the array has to have a "key" field and the rest are treated as value
+  fields
+  all value fields in the same struct have to be column vectors of the same
+  length, and the keys field has to have the same number of rows.
+  the result is a single struct with the same fields of the struct array, but
+  with the entries combined by the (symmetric) combine functions
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csummary_report_new.m'))"><span class="mono">summary_report_new</span></a></td><td class="td-linetopleft"><pre>  new summary report</pre><pre>  new summary report
+  produces averages and predictions 
+  sectioned by metric and kw group
+  in a cell array
+  with variances
+  summary_file_format: "group, metric","prediction type",value,confidence
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Csummary_struct.m'))"><span class="mono">summary_struct</span></a></td><td class="td-linetopleft"><pre>  get models_state, models of today and yesterday, opt_result </pre><pre>  get models_state, models of today and yesterday, opt_result 
+  calculate: prediction based on previous run's models (with today's
+  types and bids)
+  on yesterday's and today's models:
+  - generate position from bids
+  - use positions to generate metric predictions
+  - calculate CIs for each metric
+  display/save to csv
+  utility function: models, position, kw's =&gt; metrics + CIs (ppi, ctr, )
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ctest_cpc_calculate.m'))"><span class="mono">test_cpc_calculate</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ctest_cpc_update.m'))"><span class="mono">test_cpc_update</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ctinv_cache.m'))"><span class="mono">tinv_cache</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ctinv_cache_init.m'))"><span class="mono">tinv_cache_init</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ctmp_main.m'))"><span class="mono">tmp_main</span></a></td><td class="td-linetopleft"><pre>  Not in use</pre><pre>  Not in use
+ [port_cost port_rev indiv_cost_f indiv_rev_f]=ut_optimize;
+ [metric_mat ps pg pass]=ut_optimize;
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Ctruncate_str.m'))"><span class="mono">truncate_str</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cupdate_last_from_sample.m'))"><span class="mono">update_last_from_sample</span></a></td><td class="td-linetopleft"><pre>  sample: </pre><pre>  sample: 
+  Three columns with values per keyword:
+  [last non-zero value, yesterday's value (zero if none), today's value (zero if none)]
+  return last_val: avg(yesterday,today) if both non-zero or last non-zero
+  value
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cvar2ci.m'))"><span class="mono">var2ci</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cverify_version.m'))"><span class="mono">verify_version</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cwls_apply.m'))"><span class="mono">wls_apply</span></a></td><td class="td-linetopleft"><pre>  Calculate values (v) of dependent variable of given model (mod_st)</pre><pre>  Calculate values (v) of dependent variable of given model (mod_st)
+  by multiplying the model coefficients by the current values of
+  the causal factors (cf_all).
+  (optional) calculate s2_pred (???)
+  Inputs:
+  mod_st = model struct
+  cf_all = matrix of values of causal factors (one row per entity)
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cwls_calc_regr.m'))"><span class="mono">wls_calc_regr</span></a></td><td class="td-linetopleft"><pre>  Calculate regression model</pre><pre>  Calculate regression model
+  mod_st = model struct. Fields defined in init_models.m 
+  to_calc_l = logical vector indicating kwds to be modeled
+  conf = confidence parameter
+  partial_cf_ind = indices of relevant causal factors (out of full causal factor vector: [1, pos, pos.^2])
+  force_recalc = recalculate models for all kwds, even if no new data (default false)
+ 
+ %%% Deprecated:
+  no_recalc_n = number of kwds not recalculated because both data and causal factors have not changed.
+  This is no longer supported, since models are no longer saved after
+  update stage (model coefficients must be recalculated every run).
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cwls_extend.m'))"><span class="mono">wls_extend</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cwls_learn.m'))"><span class="mono">wls_learn</span></a></td><td class="td-linetopleft"><pre>  Update cumulative data for regression models</pre><pre>  Update cumulative data for regression models
+  mod_st.x_data is the cumulative XtX, flattened into 1 row per kw
+  mod_st.y_data is the cumulative XtY and YtY, flattened into 1 row per kw
+  today's X is taken from cf 
+  today's Y is taken from metrics
+  index basis: sum(curr_affcode_l)==size(cf,1)==size(metrics,1)
+  size(curr_affcode_l,1)==size(mod_st.*)
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cwls_scale_model.m'))"><span class="mono">wls_scale_model</span></a></td><td class="td-linetopleft"><pre>  Create new scaled model from mod_st.</pre><pre>  Create new scaled model from mod_st.
+  scaled x = original x
+  scaled y = original y * scale_col
+ 
+  inputs:
+  mod_st = original model struct (including calculated regression coefficients)
+  scale_col = column vector of metric by which to scale model
+  name = (optional) string, name of new (scaled) metric
+  skip = (optinal) logical, whether or not to include model matrices 
+ 		x_data and y_data in new model.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cwls_subindex.m'))"><span class="mono">wls_subindex</span></a></td><td class="td-linetopleft"><pre>  Not in use</pre><pre>  Not in use
+<br/></pre><span style="background: #FFC0C0">No examples</span><br/></td></tr><tr><td valign="top" class="td-linetop"><a href="matlab: edit(urldecode('D%3A%5CMBBP%5CCode%5CMBBP_Trunk%5Cwrite_to_summary_file.m'))"><span class="mono">write_to_summary_file</span></a></td><td class="td-linetopleft"><span style="background: #FFC0C0">No description line</span><br/><span style="background: #FFC0C0">No help</span><br/><span style="background: #FFC0C0">No examples</span><br/></td></tr></table></body></html>

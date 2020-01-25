@@ -1,0 +1,9 @@
+Flask
+pymongo
+bcrypt
+plotly
+dash
+numpy
+ipdb
+dash_bootstrap_components
+boto3
