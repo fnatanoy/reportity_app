@@ -87,7 +87,7 @@ url_card =  dbc.Col(
     [
         html.Br(),
         html.P('Heres your url'),
-        html.P('lDON\'T loose the url since you won\'t be able to get it again!'),
+        html.P('DON\'T loose the url since you won\'t be able to get it again!'),
         html.Br(),
         html.P('url', id='url_text'),
     ],
@@ -173,7 +173,7 @@ def update_output(
                 {'display': 'none'},
                 {'display': 'block'},
                 'Got it',
-                html_id,
+                html_url,
                 'Drag and Drop or Select Files',
                 None,
             ]
