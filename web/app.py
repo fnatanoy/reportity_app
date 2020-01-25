@@ -166,7 +166,7 @@ def update_output(
                 names=list_of_names,
                 dates=list_of_dates,
             )
-            html_url = 'reportity.com:5000/report_id/{html_id}'.format(
+            html_url = 'reportity.com/report_id/{html_id}'.format(
                 html_id=html_id,
             )
             return [
