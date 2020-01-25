@@ -263,5 +263,5 @@ def student():
 
 
 if __name__=="__main__":
-    server.run(host='0.0.0.0',debug=False, port=5000)
+    server.run(host='0.0.0.0',debug=False)
 
